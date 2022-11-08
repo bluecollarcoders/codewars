@@ -1,0 +1,23 @@
+# Code Wars Kata for today: REDUCE
+
+## Description:Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+## Solution
+
+## const grow = (x) => {
+    var sum = 1;
+    
+    for (let nums of x) {
+        sum = sum * nums;
+    }
+    return sum;
+}
+
+## Refactor
+
+## const growy = (x) => {
+	total = x.reduce((a,b) => a * b, 1);
+	return total;
+}
